@@ -1,0 +1,17 @@
+.scroll-to-top-button {
+    position: fixed;
+    bottom: 100px; 
+    right: 40px; 
+    width: 50px; 
+    height: 50px;
+    background-color: rgba(255, 235, 56, 0.5);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer; 
+    transition: opacity 0.1s; /* 加入透明度變化的過渡效果，耗時0.3秒 */
+    z-index: 666;
+}
+
+.scroll-to-top-button:hover {
+    opacity: 0.4; /* 當滑鼠懸停在按鈕上時，使按鈕完全不透明 */
+}

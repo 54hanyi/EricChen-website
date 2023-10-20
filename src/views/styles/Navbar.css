@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Noto+Sans+TC:wght@300&family=Playpen+Sans&display=swap');
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;  /*讓連結沒有底線*/
+    color: var(--nav_color);
+    font-size: 1rem;  /* 字體大小等於根元素 */
+}
+
+a:hover {
+    color: rgb(255, 230, 0);
+}
+
+
+.active {
+    background-color: rgba(255, 235, 56, 0.5);
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: sticky;
+    top: 0;
+    background-color: var(--nav_background);
+    border-bottom: var(--border_bottom);
+    color: var(--bod_color);
+    z-index: 666;
+    padding: 40px;
+}
+
+nav .logo a {
+    font-family: 'Playpen Sans', cursive;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+nav .logo a:hover {
+    font-size: 1.6rem;
+}
+
+nav .menu-wrapper {
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 1rem;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;  /* 取消連結底線*/
+    color: var(--nav_color);
+    font-size: 1rem;  /* 字體大小等於根元素 */
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+}
+
+nav ul li a:not(.active):hover {
+    background-color: rgba(255, 230, 0, 0.2);   
+}
+
+nav .toggle-btn {
+    color: rgb(207, 207, 207);
+    font-size: 1.6em;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 0.4rem;
+    right: 1rem;
+    transition: font-size 0.3s; /* 背景顏色變化平滑過渡效果 */
+}
+
+nav .toggle-btn:hover {
+    font-size: 1.8em;
+}
+
+nav .theme-btn {
+    cursor: pointer;
+    padding: 0 6px;
+    border-radius: 50%;
+}
+
+nav .theme-btn:hover {
+    background-color: rgba(255, 230, 0, 0.1);   
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 992px) {
+    nav .toggle-btn {
+        display: flex;  
+        padding: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: start;
+        padding: 15px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(22, 20, 20, 0.888);
+    }
+
+    nav ul.open {
+        display: flex;
+        margin-top: 0.85rem;
+        animation: fadeIn 0.5s ease-in-out;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        padding: 0.6rem;
+    }
+
+    nav ul li a {
+        margin: 0.2rem 0.5rem;
+    }
+
+    nav .theme-btn {
+        display: none;
+    }
+}

@@ -1,0 +1,33 @@
+.info-container {
+    display: flex;
+    align-items: center;
+}
+
+.info-image {
+    flex: 1; /* 佔據剩餘空間，以比例計算，如版面中還有其他flex:1，就是把畫面分兩份(這邊拿到就是1/2)，flex:2就是分三分(這邊拿到就是1/3) */
+}
+
+.info-image img {
+    max-width: 100%; /* 圖片寬度不超過容器 */
+    height: auto; /* 保持圖片比例 */
+}
+
+.info {
+    flex: 1;
+    padding: 5px;
+    text-align: justify;
+    line-height: 2.5;
+}
+
+.intro {
+    padding: 2rem;
+    line-height: 1.6;
+    text-align: justify;
+    max-width: 60%;
+    margin: 0 auto;  /* 居中 */
+}
+
+
+   
+
+

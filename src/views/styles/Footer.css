@@ -1,0 +1,25 @@
+.footer-container {
+    color: var(--body_color);
+    padding: 20px 40px 10px 40px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 215, 0, 0.7);
+}
+
+.row {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.row img {
+    width: 30px;
+    height: auto;
+}
+
+.welcome {
+    font-size: 0.6rem;
+    color: rgb(22, 20, 20);
+}

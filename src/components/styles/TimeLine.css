@@ -1,0 +1,99 @@
+body {
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.Timeline-container {
+    padding: 1rem;
+    padding-bottom: 400px;
+    margin: 0 auto;
+    max-width: 800px;    
+}
+
+.top-section {
+    text-align: center;
+    padding: 1.5rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline {
+    position: relative;
+    min-height: 150px;
+}
+
+.line {
+    position: absolute;
+    z-index: 2;  /* 確保它在其他元素之上 */
+    left: calc(50% - 1px);   /* calc() 函數用於計算距離，這裡是畫面50%再減去1px */
+    width: 2px;
+    top: -50px;
+    bottom: -50px;
+    /* 使元素超出了其父元素的上下邊緣，可以用於創建線條的效果 */
+    background-color:rgba(255, 215, 0, 0.7);
+}
+
+.line:before, .line:after {
+    position: absolute;
+    display: block;
+    content: '';  /* 設置偽元素的內容為空，這是為了觸發偽元素的顯示。 */
+    height: 0.6rem;
+    width: 0.6rem;
+    border-radius: 50%;
+    background-color: rgba(255, 235, 56, 0.888); 
+    left: 50%;
+    transform: translateX(-50%);  /* 使元素往左水平移動50% */
+}
+
+.line:after {
+    bottom: 0;  /* 將 .line 元素的 ::after 偽元素置於元素的底部，以實現視覺上的連接效果或指示點 */
+}
+
+.section {
+    display: flex;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: 600ms ease;
+    position: relative;
+    z-index: 1;
+    margin: 50px 0;
+    padding: 1rem;
+    border-radius: 1rem;
+    align-items: center;
+    min-height: 300px;
+}
+
+.section:nth-child(odd) {
+    flex-direction:row-reverse;
+    transform: translateX(100%);
+}
+
+.bead {
+    position: absolute;
+    display: block;
+    height: 0.6rem;
+    width: 0.6rem;
+    border-radius: 50%;
+    background-color: rgba(255, 235, 56, 1);
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+}
+
+.content {
+    width: calc(50% - 2rem);
+}
+
+.show-me:nth-child(n) {
+    transform: none;
+    opacity: 1;
+}
+
+
+h1 {
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+
+

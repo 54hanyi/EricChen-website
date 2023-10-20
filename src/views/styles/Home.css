@@ -1,0 +1,42 @@
+/* .cover img{
+    width: 99vw;
+    height: auto;
+} */
+/* 
+.cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+/* 
+.cover {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../images/cover.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  } */
+
+.cover {
+    position: relative;
+    aspect-ratio: 16/9; /* 16:9 比例 */
+}
+
+/* 讓圖片去塡滿容器 */
+.cover img {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+  
+  
+  
+  
+  
+  
+  
+
+

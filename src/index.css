@@ -1,0 +1,76 @@
+/* 設定全局字體 */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Noto+Sans+TC:wght@300&display=swap');
+
+:root {
+  --body_background: rgb(207, 207, 207);
+  --body_color: rgb(22, 20, 20);
+  --loading_line_border: 2px solid rgb(22, 20, 20);
+  --nav_background: rgba(207, 207, 207, 0.888);
+  --nav_color: rgb(22, 20, 20);
+  --border_bottom: 2px solid rgba(20, 20, 20, 0.888);
+  --see_btn_bg: rgb(207, 207, 207);
+  --card_shadow: 0px 0px 3px 3px rgba(20, 20, 20, 0.3);
+  --footer_background: rgbrgb(22, 20, 20);
+}
+
+[data-theme='dark'] {
+  --body_background: rgb(22, 20, 20);
+  --body_color: rgb(207, 207, 207);
+  --loading_line_border: 2px solid rgb(207, 207, 207);
+  --nav_background: rgba(22, 20, 20, 0.888);
+  --nav_color: rgb(207, 207, 207);
+  --border_bottom: 2px solid rgba(207, 207, 207, 0.888);
+  --see_btn_bg: rgb(22, 20, 20);
+  --card_shadow: 0px 0px 3px 3px rgba(143, 143, 143, 0.3);
+  --footer_background: rgb(207, 207, 207);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Noto Sans TC', 'Montserrat', -apple-system, BlinkMacSystemFont, 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--body_background);
+  color: var(--body_color);
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 120vh;
+}
+
+.content-wrap {
+  flex: 1;
+}
+
+@media (max-width:768px) {
+  body p, body a {
+    font-size: 14px;
+    line-height: 2;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+}
+
+
+
+
+
+
+
+
+
