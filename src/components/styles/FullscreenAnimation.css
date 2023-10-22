@@ -10,9 +10,11 @@
 
 .text {
     color: var(--body_color);
-    margin-bottom: 66px;
-    font-size: 25px;
-    letter-spacing: 2px;
+    margin-bottom: 44px;
+}
+
+.text h1 {
+    font-family: 'Playpen Sans', cursive;
 }
 
 .loading {
@@ -24,15 +26,15 @@
 }
 
 .loading .line-box {
-    padding: 2.5px;
-    width: 40%;
-    height: 28px;
+    padding: 2px;
+    width: 20%;
+    height: 16px;
     border: var(--loading_line_border);
     border-radius: 20px;
 }
 
 .loading .line-box .load-line {
-    height: 20px;
+    height: 10px;
     border-radius: 20px;
     background-color: rgb(255, 230, 0) ; 
     animation: loading 1s forwards cubic-bezier(0, 0, 0, 0);
