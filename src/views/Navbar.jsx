@@ -8,42 +8,9 @@ import ThemeButtom from '../components/ThemeButtom';
 
 function Navbar({ theme, toggleTheme }) {
     const [menuOpen, setMenuOpen] = useState(false);
-    // const [theme, setTheme] = useState('light'); 
+
     const formRef = useRef(null);
-    // const navRef = useRef(null);
-
-    // const toggleTheme = () => {
-    //     if (theme === 'light') {
-    //        setTheme('dark');
-    //        setDarkTheme();
-    //     } else {
-    //        setTheme('light');
-    //        setLightTheme();
-    //     }
-    // };
-
-    // const setDarkTheme = () => {
-    //     document.querySelector('body').setAttribute('data-theme', 'dark');
-    //     if (navRef.current) {
-    //       navRef.current.setAttribute('data-theme', 'dark');
-    //     }
-    //     localStorage.setItem('selectedTheme', 'dark');
-    // };
-      
-    // const setLightTheme = () => {
-    //     document.querySelector('body').setAttribute('data-theme', 'light');
-    //     if (navRef.current) {
-    //       navRef.current.setAttribute('data-theme', 'light');
-    //     }
-    //     localStorage.setItem('selectedTheme', 'light');
-    // };
-
-    // const selectedTheme = localStorage.getItem('selectedTheme');
-
-    // if(selectedTheme === 'dark') {
-    //     setDarkTheme();
-    // } 
-
+    
     const handleAndScrolMenu = () => {
         window.scrollTo(0, 0); // 讓頁面跳轉到最頂端
         setMenuOpen(!menuOpen)
