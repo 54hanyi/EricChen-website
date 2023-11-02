@@ -1,20 +1,21 @@
 {
   "files": {
     "main.css": "/my-presonal-website/static/css/main.b18819ef.css",
-    "main.js": "/my-presonal-website/static/js/main.308c32f9.js",
+    "main.js": "/my-presonal-website/static/js/main.ca7d9d15.js",
     "static/js/787.7b73c1ac.chunk.js": "/my-presonal-website/static/js/787.7b73c1ac.chunk.js",
     "static/media/Me.png": "/my-presonal-website/static/media/Me.46e58fddc77625c2b326.png",
     "static/media/ya.png": "/my-presonal-website/static/media/ya.4db8c7dcebe2960bcb5d.png",
     "static/media/cover.jpg": "/my-presonal-website/static/media/cover.e5eead3ad90b558f03b9.jpg",
     "static/media/contact_banner.jpg": "/my-presonal-website/static/media/contact_banner.eaee8db3c3a9ef05457e.jpg",
+    "static/media/react-fiverr.jpg": "/my-presonal-website/static/media/react-fiverr.4683a4053364bccbf8f7.jpg",
     "static/media/react-weather-app.jpg": "/my-presonal-website/static/media/react-weather-app.6b9b1a8b54c13bf2c5d8.jpg",
     "index.html": "/my-presonal-website/index.html",
     "main.b18819ef.css.map": "/my-presonal-website/static/css/main.b18819ef.css.map",
-    "main.308c32f9.js.map": "/my-presonal-website/static/js/main.308c32f9.js.map",
+    "main.ca7d9d15.js.map": "/my-presonal-website/static/js/main.ca7d9d15.js.map",
     "787.7b73c1ac.chunk.js.map": "/my-presonal-website/static/js/787.7b73c1ac.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b18819ef.css",
-    "static/js/main.308c32f9.js"
+    "static/js/main.ca7d9d15.js"
   ]
 }
