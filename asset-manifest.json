@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-presonal-website/static/css/main.b18819ef.css",
-    "main.js": "/my-presonal-website/static/js/main.ca7d9d15.js",
+    "main.js": "/my-presonal-website/static/js/main.ae5e1330.js",
     "static/js/787.7b73c1ac.chunk.js": "/my-presonal-website/static/js/787.7b73c1ac.chunk.js",
     "static/media/Me.png": "/my-presonal-website/static/media/Me.46e58fddc77625c2b326.png",
     "static/media/ya.png": "/my-presonal-website/static/media/ya.4db8c7dcebe2960bcb5d.png",
@@ -11,11 +11,11 @@
     "static/media/react-weather-app.jpg": "/my-presonal-website/static/media/react-weather-app.6b9b1a8b54c13bf2c5d8.jpg",
     "index.html": "/my-presonal-website/index.html",
     "main.b18819ef.css.map": "/my-presonal-website/static/css/main.b18819ef.css.map",
-    "main.ca7d9d15.js.map": "/my-presonal-website/static/js/main.ca7d9d15.js.map",
+    "main.ae5e1330.js.map": "/my-presonal-website/static/js/main.ae5e1330.js.map",
     "787.7b73c1ac.chunk.js.map": "/my-presonal-website/static/js/787.7b73c1ac.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b18819ef.css",
-    "static/js/main.ca7d9d15.js"
+    "static/js/main.ae5e1330.js"
   ]
 }
