@@ -8,7 +8,7 @@ const cardData = [
     {
         title: 'react_fiverr',
         body: '名為"接包吧"的接案網站UI',
-        href: 'https://54hanyi.github.io/react_fiverr/',
+        href: 'https://54hanyi.github.io/react-fiverr/',
         imageSrc: react_fiverr, 
     },
     {
