@@ -1,64 +1,103 @@
 import React from 'react';
 import './styles/ProtfolioCard.css';
-import ya from '../images/ya.png';
-import react_weather_app from '../images/react-weather-app.jpg';
-import react_fiverr from "../images/react-fiverr.jpg";
+
 
 const cardData = [
     {
-        title: 'react_fiverr',
-        body: '名為"接包吧"的接案網站UI',
+        title: '陳翰毅的個人網站',
+        body: '整合個人經歷、作品集與聯絡方式。採用 React 搭配 HTML5 和 CSS3 打造簡潔大方的頁面，並注重 SEO 最佳化來提升搜尋排名。',
+        tech: [
+            `${process.env.PUBLIC_URL}/images/icons/react.png`,
+            `${process.env.PUBLIC_URL}/images/icons/html5.png`,
+            `${process.env.PUBLIC_URL}/images/icons/css3.png`,
+            `${process.env.PUBLIC_URL}/images/icons/js.png`,
+        ],
+        href: 'https://54hanyi.github.io/ericchen-website/',
+        img: `${process.env.PUBLIC_URL}/images/ericchen-website.jpg`, 
+    },
+    {
+        title: '天氣晴不晴',
+        body: '一個快速查詢台灣氣象資訊的小工具，涵蓋即時天氣數據呈現與用戶友好介面。',
+        tech: [
+            `${process.env.PUBLIC_URL}/images/icons/react.png`,
+            `${process.env.PUBLIC_URL}/images/icons/html5.png`,
+            `${process.env.PUBLIC_URL}/images/icons/css3.png`,
+            `${process.env.PUBLIC_URL}/images/icons/js.png`,
+        ],
+        href: 'https://54hanyi.github.io/react-weather-app/',
+        img: `${process.env.PUBLIC_URL}/images/react-weather-app.jpg`,  
+    },
+    {
+        title: 'react-fiverr',
+        body: '開發「接包吧」接案網站的 UI，應用了 Sass 與 Vite 加速開發過程，並在設計中考量到響應式布局挑戰，成功實現了跨裝置的完美呈現。',
+        tech: [
+            `${process.env.PUBLIC_URL}/images/icons/react.png`,
+            `${process.env.PUBLIC_URL}/images/icons/html5.png`,
+            `${process.env.PUBLIC_URL}/images/icons/sass.png`,
+            `${process.env.PUBLIC_URL}/images/icons/js.png`,
+            `${process.env.PUBLIC_URL}/images/icons/vite.png`,
+        ],
         href: 'https://54hanyi.github.io/react-fiverr/',
-        imageSrc: react_fiverr, 
+        img: `${process.env.PUBLIC_URL}/images/react-fiverr.jpg`, 
     },
     {
-      title: 'react-weather-app',
-      body: '一個小型簡易的響應式氣象網頁',
-      href: 'https://54hanyi.github.io/react-weather-app/',
-      imageSrc: react_weather_app, 
+        title: '旅館訂房網',
+        body: '實現會員登入、房間查詢和即時訂單功能、串接第三方 API，並採用 React + TypeScript 提升代碼的可維護性與開發效率。',
+        tech: [
+            `${process.env.PUBLIC_URL}/images/icons/react.png`,
+            `${process.env.PUBLIC_URL}/images/icons/tailwind.png`,
+            `${process.env.PUBLIC_URL}/images/icons/ts.png`,
+            `${process.env.PUBLIC_URL}/images/icons/vite.png`,
+        ],
+        href: 'https://54hanyi.github.io/react-ts-roomorder/',
+        img: `${process.env.PUBLIC_URL}/images/react-ts-roomorder.jpg`, 
     },
     {
-        title: 'ya我真Q',
-        body: '我是一隻牛逼得老鼠，會比耶哈哈哈哈哈我超屌，這樣的老鼠你會幾點回家？',
-        href: 'https://www.youtube.com/',
-        imageSrc: ya, 
+        title: '放假好去處',
+        body: '使用Next.js + TypeScript搭建，提供快速查詢台灣各式展覽及文藝活動的小工具。',
+        tech: [
+            `${process.env.PUBLIC_URL}/images/icons/react.png`,
+            `${process.env.PUBLIC_URL}/images/icons/next.png`,
+            `${process.env.PUBLIC_URL}/images/icons/tailwind.png`,
+            `${process.env.PUBLIC_URL}/images/icons/materialUI.png`,
+            `${process.env.PUBLIC_URL}/images/icons/ts.png`,
+        ],
+        href: 'https://next-ts-where-to-play.vercel.app/',
+        img: `${process.env.PUBLIC_URL}/images/next-ts-whereToPlay.png`,
     },
-    {
-        title: 'ya我真Q',
-        body: '我是一隻牛逼得老鼠，會比耶哈哈哈哈哈我超屌，這樣的老鼠你會幾點回家？',
-        href: 'https://www.youtube.com/',
-        imageSrc: ya, 
-    },
-    {
-        title: 'ya我真Q',
-        body: '我是一隻牛逼得老鼠，會比耶哈哈哈哈哈我超屌，這樣的老鼠你會幾點回家？',
-        href: 'https://www.youtube.com/',
-        imageSrc: ya, 
-    },
-  ];
+];
 
 function ProtfolioCard() {
 
   return (
     <>
-        {cardData.map((card, index) => (
+        {cardData.slice().reverse().map((card, index) => (
             <div key={index} className="card-container">
                 <div className="image-container">
-                <img src={card.imageSrc} alt="" />
+                    <img src={card.img} alt={card.title} />
                 </div>
                 <div className="card-content">
-                <div className="card-title">
-                    <h2>{card.title}</h2>
-                </div>
-                <div className="card-body">
-                    <p>{card.body}</p>
-                </div>
+                    <div className="card-title">
+                        <h2>{card.title}</h2>
+                    </div>
+                    <div className="card-body">
+                        <p>{card.body}</p>
+                    </div>
+                    <div className="tech-icons">
+                        {card.tech.map((techIcon, techIndex) => (
+                            <img
+                                key={techIndex}
+                                src={techIcon}
+                                alt="Technology icon"
+                                className="tech-icon"
+                            />
+                        ))}
+                    </div>
                 </div>
                 <div className="see-btn">
-                <button>
-                    <a href={card.href} target="_blank" rel="noreferrer noopener">讓我看看</a>
-                    {/* 添加` target="_blank" rel="noreferrer noopener" `有助於防止惡意網站通過`window.opener`訪問自己的網站 */}
-                </button>
+                    <button>
+                        <a href={card.href} target="_blank" rel="noreferrer noopener">Try It !</a>
+                    </button>
                 </div>
             </div>
         ))}

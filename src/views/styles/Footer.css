@@ -1,11 +1,20 @@
 .footer-container {
     color: var(--body_color);
-    padding: 20px 40px 10px 40px;
+    padding: 1rem 2rem 0.5rem 2rem;
     position: relative;
     bottom: 0;
     width: 100%;
     background-color: rgba(255, 215, 0, 0.7);
 }
+
+.contact {
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    word-spacing: 0.3rem;
+    margin-bottom: 0.8rem;
+}
+
 
 .row {
     width: 40%;
@@ -15,7 +24,7 @@
 }
 
 .row img {
-    width: 30px;
+    width: 2rem;
     height: auto;
 }
 

@@ -50,10 +50,10 @@ function Navbar({ theme, toggleTheme }) {
             <div className="logo" onClick={ScrollTop}><Link to="/">EricChen.Dev</Link></div>
             <div className="menu-wrapper">
                 <ul className={menuOpen ? "open" : ""}>
-                    <li><NavLink to="/" onClick={handleAndScrolMenu}>主頁</NavLink></li>
-                    <li><NavLink to="/about" onClick={handleAndScrolMenu}>學經歷</NavLink></li>
-                    <li><NavLink to="/portfolio" onClick={handleAndScrolMenu}>作品集</NavLink></li>
-                    <li><NavLink to="/contact" onClick={handleAndScrolMenu}>聯絡我</NavLink></li>
+                    <li><NavLink to="/" onClick={handleAndScrolMenu}>Home</NavLink></li>
+                    <li><NavLink to="/about" onClick={handleAndScrolMenu}>Experience</NavLink></li>
+                    <li><NavLink to="/portfolio" onClick={handleAndScrolMenu}>Portfolios</NavLink></li>
+                    {/* <li><NavLink to="/contact" onClick={handleAndScrolMenu}>contact</NavLink></li> */}
                 </ul>  
             </div>
             <ThemeButtom theme={theme} toggleTheme={toggleTheme} />

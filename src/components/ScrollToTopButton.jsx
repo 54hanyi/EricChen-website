@@ -1,6 +1,5 @@
 import React, { useState,useEffect } from 'react';
 import './styles/ScrollToTopButton.css';
-import up from '../images/up-arrow.png'
 
 function ScrollToTopButton() {
   const [isVisible, setIsVisible] = useState(false);
@@ -34,7 +33,7 @@ function ScrollToTopButton() {
     // 根据isVisible的狀態來顯示or隐藏按鈕
     isVisible && (
         <button className="scroll-to-top-button" onClick={scrollToTop}>
-            <img src={up} alt="Scroll to Top" />
+            <img src={`${process.env.PUBLIC_URL}/images/up-arrow.png`} alt="Scroll to Top" />
         </button>
     )   
   );

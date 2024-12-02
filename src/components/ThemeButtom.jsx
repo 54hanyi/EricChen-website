@@ -1,13 +1,12 @@
 import React from 'react'
-import light from '../images/light.png';
-import dark from '../images/dark.png';
+
 
 function ThemeButtom({ theme, toggleTheme }) {
     
     return (
         <>
             <div className="theme-btn" onClick={toggleTheme}>
-                <img src={theme === 'light' ? light : dark} alt="Theme" />
+                <img src={theme === 'light' ? `${process.env.PUBLIC_URL}/images/light.png` : `${process.env.PUBLIC_URL}/images/dark.png`} alt="Theme" />
             </div>
         </>
   )

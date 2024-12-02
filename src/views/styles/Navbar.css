@@ -46,6 +46,9 @@ nav .logo a:hover {
 }
 
 nav .menu-wrapper {
+    font-family: 'Playpen Sans', cursive;
+    font-size: 1.5rem;
+    font-weight: bold;
     width: 100%;
 }
 

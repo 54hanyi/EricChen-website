@@ -1,15 +1,29 @@
-/* .card {
-    padding: 10px 40px;
-} */
+.protfolio-title {
+    font-size: 2rem;
+    margin: 2rem;
+    text-align: center;
+}
+
+.ProtfolioCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
 
 .card-container {
-    margin-top: 3rem;
-    width: 300px;
-    height: 430px;
-    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    width: 50%;
+    height: 16rem; /* 設定固定高度 */
     box-shadow: var(--card_shadow);
     transition: 0.1s ease-in;
     border-radius: 0.6rem;
+    padding: 2rem;
 }
 
 .card-container:hover {
@@ -18,66 +32,71 @@
 }
 
 .image-container {
+    width: 250px;
+    height: 100%; /* 讓圖片高度與 card-container 對齊 */
     overflow: hidden;
-    height: 200px;
-    border-radius: 3.8rem;
+    border-radius: 0.6rem;
 }
 
 .image-container img {
-    padding: 1rem;
-    margin-bottom: 0;
-    width: 100%;   
-    height: 100%;   
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
 .card-content {
-    margin: 1rem;
-    margin-top: 0.5rem;
-}
-
-.card-body {
-    height: 90px;
-    overflow: auto;
-    font-size: 20px;
-}
-
-h3, p {
-    /* 重製默認樣式 */
-    margin: 0;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* 填滿可用高度 */
+    flex: 1;
 }
 
 .card-title {
-    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.card-body {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    max-height: 4.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tech-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.tech-icon {
+    width: 2rem;
+    height: auto;
 }
 
 .see-btn {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    margin: auto;
 }
 
 .see-btn button {
     background-color: var(--see_btn_bg);
-    padding: 0.3rem;
+    padding: 0.3rem 0.6rem;
     border: none;
     transition: 0.2s;
     border-radius: 0.5rem;
+    cursor: pointer;
 }
 
 .see-btn button:hover {
-    background-color: rgba(255, 235, 56, 0.5);;
+    background-color: rgba(255, 235, 56, 0.5);
 }
 
 .see-btn button a {
-    color: var( --body_color);
+    color: var(--body_color);
     text-decoration: none;
     font-weight: bold;
-}
-
-.ProtfolioCard {
-    display: flex;
-    flex-wrap: wrap; /* 卡片自动換行 */
-    justify-content: space-between;
-    padding: 40px;
 }

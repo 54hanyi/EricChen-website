@@ -1,12 +1,12 @@
 import React from 'react';
 import './styles/Contact.css'
-import contact_banner from '../images/contact_banner.jpg'
+// import contact_banner from '../images/contact_banner.jpg'
 
 function Contact() {
   return (
     <>
       <div className="contact-banner">
-        <img src={contact_banner} alt="banner" />
+        {/* <img src={contact_banner} alt="banner" /> */}
       </div>
       <div className="contact-container">
         <h1>有任何工作事宜歡迎聯絡：</h1>
