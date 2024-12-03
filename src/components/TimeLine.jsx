@@ -81,7 +81,7 @@ const Timeline = () => {
   return (
     <div className="Timeline-container">
       <div className="top-section">
-        <h1>前端之路</h1>
+        <h1>Front-End's Experiences</h1>
       </div>
       <div className="timeline" ref={timelineRef}>
         <div className="line" ref={lineRef}></div>
