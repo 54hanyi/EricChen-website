@@ -1,21 +1,15 @@
 {
   "files": {
-    "main.css": "/ericchen-website/static/css/main.b18819ef.css",
-    "main.js": "/ericchen-website/static/js/main.6f6d810c.js",
+    "main.css": "/ericchen-website/static/css/main.b0d7c733.css",
+    "main.js": "/ericchen-website/static/js/main.e13d49a6.js",
     "static/js/787.80abdf2e.chunk.js": "/ericchen-website/static/js/787.80abdf2e.chunk.js",
-    "static/media/Me.png": "/ericchen-website/static/media/Me.46e58fddc77625c2b326.png",
-    "static/media/ya.png": "/ericchen-website/static/media/ya.4db8c7dcebe2960bcb5d.png",
-    "static/media/cover.jpg": "/ericchen-website/static/media/cover.e5eead3ad90b558f03b9.jpg",
-    "static/media/contact_banner.jpg": "/ericchen-website/static/media/contact_banner.eaee8db3c3a9ef05457e.jpg",
-    "static/media/react-fiverr.jpg": "/ericchen-website/static/media/react-fiverr.4683a4053364bccbf8f7.jpg",
-    "static/media/react-weather-app.jpg": "/ericchen-website/static/media/react-weather-app.6b9b1a8b54c13bf2c5d8.jpg",
     "index.html": "/ericchen-website/index.html",
-    "main.b18819ef.css.map": "/ericchen-website/static/css/main.b18819ef.css.map",
-    "main.6f6d810c.js.map": "/ericchen-website/static/js/main.6f6d810c.js.map",
+    "main.b0d7c733.css.map": "/ericchen-website/static/css/main.b0d7c733.css.map",
+    "main.e13d49a6.js.map": "/ericchen-website/static/js/main.e13d49a6.js.map",
     "787.80abdf2e.chunk.js.map": "/ericchen-website/static/js/787.80abdf2e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b18819ef.css",
-    "static/js/main.6f6d810c.js"
+    "static/css/main.b0d7c733.css",
+    "static/js/main.e13d49a6.js"
   ]
 }
