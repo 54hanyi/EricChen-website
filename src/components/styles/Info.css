@@ -1,5 +1,4 @@
 .info-container {
-    margin-top: -10rem;
     display: flex;
     align-items: center;
 }
@@ -18,21 +17,53 @@
     font-size: 1.2rem;
     text-align: justify;
     line-height: 2.5;
+    padding: 2rem;
+    margin: 0 auto;  /* 居中 */
+}
+
+.intro-container {
+    display: flex;
+    justify-content: center; /* 水平置中 */
 }
 
 .intro {
-    padding-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 8rem 6rem 8rem;
     line-height: 2;
     text-align: justify;
-    max-width: 60%;
-    margin: 0 auto;  /* 居中 */
+    /* max-width: 80%; */
+    /* margin: 0 auto;  居中 */
+}
+
+.intro p {
+    text-indent: 2em; /* 兩個全形空白的寬度 */
 }
 
 .row {
     display: flex;
     flex-direction: row;
-    gap: 1.2rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+    gap: 1rem;
+    width: 100%;
 }
    
+@media (max-width: 1024px) {
+    .info-container {
+        flex-direction: column;
+    }
+    .intro {
+        padding: 1rem 2rem 4rem 2rem;
+    }
+}
 
-
+@media (max-width: 480px) {
+    .info {
+        font-size: 1rem;
+    }
+    .row {
+        gap: 0.5rem;
+    }
+}

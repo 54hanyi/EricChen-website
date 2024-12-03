@@ -17,7 +17,7 @@ function Footer() {
   return (
       <div className="footer-container">
         <div className='contact'>Contact me</div>
-        <div className="row">
+        <div className="footer-row">
           {iconData.map((link, index) => (
           <div key={index}>
             <a href={link.href} target="_blank" rel="noreferrer noopener">

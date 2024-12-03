@@ -32,7 +32,11 @@
     left: 0;
 }
   
-  
+@media (max-width: 1450px) {
+    .cover img {
+        height: auto;
+    }
+}  
   
   
   
