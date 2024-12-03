@@ -51,20 +51,7 @@ body {
   flex: 1;
 }
 
-@media (max-width:768px) {
-  body p, body a {
-    font-size: 14px;
-    line-height: 2;
-  }
 
-  h1 {
-    font-size: 30px;
-  }
-
-  h2 {
-    font-size: 25px;
-  }
-}
 
 
 

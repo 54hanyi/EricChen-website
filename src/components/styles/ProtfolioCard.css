@@ -9,14 +9,14 @@
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    padding: 2rem;
+    padding: 0 2rem 8rem 2rem;
 }
 
 .card-container {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    gap: 1.5rem;
+    align-items: center;
+    gap: 1rem;
     margin-top: 2rem;
     width: 50%;
     height: 16rem; /* 設定固定高度 */
@@ -32,15 +32,18 @@
 }
 
 .image-container {
-    width: 250px;
-    height: 100%; /* 讓圖片高度與 card-container 對齊 */
-    overflow: hidden;
+    aspect-ratio: 1/1; 
+    width: 100%; 
+    max-width: 12rem; 
+    /* 以上讓圖片維持正正方型比例縮放 */
     border-radius: 0.6rem;
+    margin-right: 0.5rem;
 }
 
 .image-container img {
     width: 100%;
     height: 100%;
+    border-radius: 0.6rem;
     object-fit: cover;
 }
 
@@ -99,4 +102,68 @@
     color: var(--body_color);
     text-decoration: none;
     font-weight: bold;
+}
+
+@media (max-width: 1440px) {
+    .card-container {
+        width: 80%;
+        height: 16rem;
+    }
+    .image-container {
+        width: 12rem;
+        height: 12rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .card-container {
+        width: 90%;
+        height: 12rem;
+    }
+    .image-container {
+        width: 8rem;
+        height: 8rem;
+    }
+    .card-body {
+        display: none;
+    }
+}
+
+@media (max-width: 808px) {
+    .card-container {
+        height: 10rem;
+    }
+    .image-container {
+        width: 6rem;
+        height: 6rem;
+    }
+    .card-title {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .card-container {
+        width: 100%;
+        position: relative;
+    }
+    .see-btn {
+        position: absolute;
+        right: 0.5rem;
+        margin-top: 0.5rem;
+    }
+    .tech-icons {
+        overflow: hidden;
+    }
+    .tech-icon {
+        width: 1rem;
+    }
+}
+@media (max-width: 550px) {
+    .card-title {
+        font-size: 0.8rem;
+    }
+    .see-btn button a {
+        font-size: 1rem;
+    }
 }

@@ -4,7 +4,7 @@ import './styles/ProtfolioCard.css';
 
 const cardData = [
     {
-        title: '陳翰毅的個人網站',
+        title: "Eric's Website",
         body: '整合個人經歷、作品集與聯絡方式。採用 React 搭配 HTML5 和 CSS3 打造簡潔大方的頁面，並注重 SEO 最佳化來提升搜尋排名。',
         tech: [
             `${process.env.PUBLIC_URL}/images/icons/react.png`,

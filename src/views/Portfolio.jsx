@@ -5,7 +5,7 @@ function Protfolio({ theme }) {
   return (
     <>
       <div className='protfolio-title'>
-        <h1>My Protfolios</h1>
+        <h1>Protfolios</h1>
       </div>
       <div className="ProtfolioCard">
         <ProtfolioCard theme={theme} />
