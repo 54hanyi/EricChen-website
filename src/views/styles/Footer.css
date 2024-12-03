@@ -19,8 +19,8 @@
 .footer-row {
     width: 40%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+
+    gap: 2rem;
 }
 
 .row img {
@@ -31,4 +31,10 @@
 .welcome {
     font-size: 0.6rem;
     color: rgb(22, 20, 20);
+}
+
+@media (max-width: 426px) {
+    .footer-row {
+        gap: 1rem;
+    }
 }
