@@ -51,7 +51,7 @@ function App() {
     if (selectedTheme) {
       setTheme(selectedTheme);
     }
-  }, []);
+  }, [selectedTheme]);
 
   // 用來改變主題
   if (selectedTheme === "dark") {
