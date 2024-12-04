@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ericchen-website/static/css/main.f9e8c1ed.css",
-    "main.js": "/ericchen-website/static/js/main.78aac3b1.js",
+    "main.js": "/ericchen-website/static/js/main.75611efc.js",
     "static/js/787.b5a4a3e8.chunk.js": "/ericchen-website/static/js/787.b5a4a3e8.chunk.js",
     "index.html": "/ericchen-website/index.html",
     "main.f9e8c1ed.css.map": "/ericchen-website/static/css/main.f9e8c1ed.css.map",
-    "main.78aac3b1.js.map": "/ericchen-website/static/js/main.78aac3b1.js.map",
+    "main.75611efc.js.map": "/ericchen-website/static/js/main.75611efc.js.map",
     "787.b5a4a3e8.chunk.js.map": "/ericchen-website/static/js/787.b5a4a3e8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f9e8c1ed.css",
-    "static/js/main.78aac3b1.js"
+    "static/js/main.75611efc.js"
   ]
 }
