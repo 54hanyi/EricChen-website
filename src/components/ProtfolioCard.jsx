@@ -29,7 +29,7 @@ const cardData = [
     },
     {
         title: 'react-fiverr',
-        body: '開發「接包吧」接案網站的 UI，應用了 Sass 與 Vite 加速開發過程，並在設計中考量到響應式布局挑戰，成功實現了跨裝置的完美呈現。',
+        body: '開發「接包吧」接案網站的 UI，應用了 Sass 與 Vite 加速開發過程，簡潔有力得呈現網頁的排版設計。',
         tech: [
             `${process.env.PUBLIC_URL}/images/icons/react.png`,
             `${process.env.PUBLIC_URL}/images/icons/html5.png`,
@@ -42,7 +42,7 @@ const cardData = [
     },
     {
         title: '旅館訂房網',
-        body: '實現會員登入、房間查詢和即時訂單功能、串接第三方 API，並採用 React + TypeScript 提升代碼的可維護性與開發效率。',
+        body: '實現會員登入、房間及訂單查詢功能、串接第三方 API，搭配RWD設計，並採用 React + TypeScript 提升代碼的可維護性與開發效率。',
         tech: [
             `${process.env.PUBLIC_URL}/images/icons/react.png`,
             `${process.env.PUBLIC_URL}/images/icons/tailwind.png`,
