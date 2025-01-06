@@ -16,18 +16,6 @@ const cardData = [
         img: `${process.env.PUBLIC_URL}/images/ericchen-website.jpg`, 
     },
     {
-        title: '天氣晴不晴',
-        body: '一個快速查詢台灣氣象資訊的小工具，涵蓋即時天氣數據呈現與用戶友好介面。',
-        tech: [
-            `${process.env.PUBLIC_URL}/images/icons/react.png`,
-            `${process.env.PUBLIC_URL}/images/icons/html5.png`,
-            `${process.env.PUBLIC_URL}/images/icons/css3.png`,
-            `${process.env.PUBLIC_URL}/images/icons/js.png`,
-        ],
-        href: 'https://54hanyi.github.io/react-weather-app/',
-        img: `${process.env.PUBLIC_URL}/images/react-weather-app.jpg`,  
-    },
-    {
         title: 'react-fiverr',
         body: '開發「接包吧」接案網站的 UI，應用了 Sass 與 Vite 加速開發過程，簡潔有力得呈現網頁的排版設計。',
         tech: [
@@ -39,6 +27,18 @@ const cardData = [
         ],
         href: 'https://54hanyi.github.io/react-fiverr/',
         img: `${process.env.PUBLIC_URL}/images/react-fiverr.jpg`, 
+    },
+    {
+        title: '天氣晴不晴',
+        body: '一個快速查詢台灣氣象資訊的小工具，涵蓋即時天氣數據呈現與用戶友好介面。',
+        tech: [
+            `${process.env.PUBLIC_URL}/images/icons/react.png`,
+            `${process.env.PUBLIC_URL}/images/icons/html5.png`,
+            `${process.env.PUBLIC_URL}/images/icons/css3.png`,
+            `${process.env.PUBLIC_URL}/images/icons/js.png`,
+        ],
+        href: 'https://54hanyi.github.io/react-weather-app/',
+        img: `${process.env.PUBLIC_URL}/images/react-weather-app.jpg`,  
     },
     {
         title: '旅館訂房網',
