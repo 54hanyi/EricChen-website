@@ -42,7 +42,7 @@ const cardData = [
     },
     {
         title: '旅館訂房網',
-        body: '實現會員登入、房間查詢和即時訂單功能、串接第三方 API，搭配RWD設計，並採用 React + TypeScript 提升代碼的可維護性與開發效率的訂房網頁。',
+        body: '實現會員登入、房間查詢和即時訂單功能、串接第三方 API，搭配RWD設計，並採用React + TS提升代碼可維護性與開發效率的訂房網頁。',
         tech: [
             `${process.env.PUBLIC_URL}/images/icons/react.png`,
             `${process.env.PUBLIC_URL}/images/icons/tailwind.png`,
